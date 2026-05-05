@@ -30,8 +30,8 @@
 
 ##   4. Data structures that we will use:
 ###      a. Our character's struct.
-###      b. enumeration for enemy carbs.
-###      c. Hard-coded enemy struct based off of what we see in enum.
+###      b. enumeration for bad foods.
+###      c. enumeration for good foods.
 
 ##   5. The files we are using:
 ###      a. KetoMain.c: KetoMain.c is our main operating file that the other two files are going to based off of in compilation. It is also the file where all of our other files will come back to and base all of their code off of. Ultiamtely, KetoMain.c will be our file that keeps the story moving as opposed to our Ketohelpers files which hold parts of our code for keeping main going.
