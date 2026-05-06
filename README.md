@@ -30,10 +30,10 @@
 ###      int choice; // 1 for yes, 2 for no. WILL USE 4 BYTES
 
 ##   3. In terms of having the functions of the program:
-###      a. A function for randomizing the foods that the player will encounter.
-###      b. A function for the user each turn to see what changed with their character that round.
-###      c. A function that updates the high score.
-###      40 BYTES SEEMS FAIR
+###      a. A function for randomizing the foods that the player will encounter (this includes both good and bad. Furthermore, if there are foods where there is a positive on both, a player can sitll reject it... realistically, I can reject a giant steak which is both nutritious and would make me happy in favor of something terrible like donuts or cake).
+###      b. A function for the user each turn to see what changed with their character that round. (To clarify on this one, this will be a quick recap of what has happened and where the player stats currently sit at.)
+###      c. A function that updates the high score (or events survived. The nature of the game probably has it so that the player could keep going for a very long time).
+###      450 BYTES SEEMS FAIR TO ALSO ACCOUNT FOR PRINTF STATEMENTS.
 
 ##   4. Data structures that we will use:
 ###      a. Our character's struct. (Memory for this was already listed above)
@@ -71,9 +71,9 @@
 ###      b. Ketohelpers.h: This is our file for storing our prototypes for the data types and functions from Ketohelpers.h.
 ###      c. Ketohelpers.c: This is our file for our functions and data types written out so that they can function with our KetoMain.c file.
 
-## MEMORY USAGE WILL LAND US AT 0.8 KB. 1 KB would likley give us some breathing room if we go over.
+## MEMORY USAGE WILL LAND US AT 1KB OR GREATER. NOT AN EXACT VALUE, BUT ENOUGH TO GIVE US BREATHING ROOM BUT NOT BE EXCESSIVE.
 
-##   6. 
+##   6. How I plan to use the Copilot.
    
 ###      Understanding the assignment now as I do, I am going to actually set up how I want Copilot to build my code using this readme file. I will specify what I want functions to do and how they are going to corelate to the main code, even if I don't entirely have them built out right now. I did copy and paste this as well into ChatGPT for getting my expected memory usage and used Copilot to help with building the struct and enum. that we have above.
    
