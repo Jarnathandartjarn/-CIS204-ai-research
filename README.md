@@ -75,11 +75,11 @@
 
 ##   6. 
    
-###      I was fully prepared to write this myself and have Ai help me on the side but now that I realize that Ai is writing it and I am verifying it, it will actually make this 250 word research plan a bit more difficult. 
+###      Understanding the assignment now as I do, I am going to actually set up how I want Copilot to build my code using this readme file. I will specify what I want functions to do and how they are going to corelate to the main code, even if I don't entirely have them built out right now. I did copy and paste this as well into ChatGPT for getting my expected memory usage and used Copilot to help with building the struct and enum. that we have above.
    
-###      Nevertheless, my plan for writing this with Ai is to give it a structured approach as I do it. Rather than giving it an idea (me pasting this whole readme into the chatbot), I want to actually give it pieces of my vision and build it up going forward. I would start with getting my structs setup in the Ketohelpers.c, put the prototypes into my Ketohelpers.h header file, and start building my code in the main file. For thinking in a computational manner as I do, I would then go back to my Ketohelpers.c file and start structuring my functions as I need to corespond to my main. I think I will end up using this in a way where I formulate the logic and give it direction, maybe write small bits of code, but then have the Ai build the larger parts and actually correct the syntax.
+###      Nevertheless, my plan for using Ai specifically to write this is to give it a structured approach as I do it. I will think computationally where I start in main and as I encounter what I need, I will then take it back out to the c helper and h helper files. In other words, rather than giving it an idea (me pasting this whole readme into the chatbot), I want to actually give it pieces of my vision and build it up going forward. I think I will end up using this in a way where I formulate the logic and give it direction but then have the Ai build it out for me.
 
-###      Another way of saying that would be me putting down something like my own pseudocode and then having Copilot or ChatGPT change it into C. I would then go over it afterwards and make sure it does actually match my vision and direction.
+###      Another way of saying that would be me putting down something like my own pseudocode (which a correct way of saying such is just this readme.md file) and then having Copilot build the code off of it. I would then go over it afterwards and make sure it does actually match my vision and direction. If edits are allowed, I will make those myself, otherwise, I will just play with the ai and specifically tell it what I want.
 
 ###      Examples of prompts I would use would be...
 
