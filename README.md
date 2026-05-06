@@ -39,31 +39,10 @@
 ###      a. Our character's struct. (Memory for this was already listed above)
 ###      b. enumeration for foods. (I will just list all of the good and bad foods onto a single data structure and than find a way to build it so that each of the items in here are given points for discipline and happiness) It will look like:
 ###     typedef enum {
-###     FOOD_KETO_AVOCADO,
-###     FOOD_KETO_BACON,
-###     FOOD_KETO_CHEESE,
-###     FOOD_KETO_EGGS,
-###     FOOD_KETO_SALMON,
-###     FOOD_KETO_SPINACH,
-###     FOOD_KETO_ALMONDS,
-###     FOOD_KETO_CHICKEN,
-###     FOOD_KETO_BROCCOLI,
-###     FOOD_KETO_OLIVES,
-### 
-###     FOOD_RUIN_PIZZA,
-###     FOOD_RUIN_CAKE,
-###     FOOD_RUIN_BREAD,
-###     FOOD_RUIN_PASTA,
-###     FOOD_RUIN_DONUT,
-###     FOOD_RUIN_FRIES,
-###     FOOD_RUIN_SODA,
-###     FOOD_RUIN_CANDY,
-###     FOOD_RUIN_CHOCOLATE_BAR,
-###     FOOD_RUIN_MUFFIN,
-
 ### } FoodType;
+### enum will be used for a list of good and bad foods.
 ###     This will land us at about 680 Bytes (giving us some breathing room)
-###      c. Likely another method of calling the values that each enum data type has.
+###      c. Another method of calling the values that each enum data type has.
 
 ##   5. The files we are using:
 ###      a. KetoMain.c: KetoMain.c is our main operating file that the other two files are going to based off of in compilation. It is also the file where all of our other files will come back to and base all of their code off of. Ultiamtely, KetoMain.c will be our file that keeps the story moving as opposed to our Ketohelpers files which hold parts of our code for keeping main going.
