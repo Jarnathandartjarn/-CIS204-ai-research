@@ -60,8 +60,7 @@
 ###     FOOD_RUIN_CANDY,
 ###     FOOD_RUIN_CHOCOLATE_BAR,
 ###     FOOD_RUIN_MUFFIN,
-### 
-###     FOOD_COUNT
+
 ### } FoodType;
 ###     This will land us at about 680 Bytes (giving us some breathing room)
 ###      c. Likely another method of calling the values that each enum data type has.
