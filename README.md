@@ -6,37 +6,72 @@
 
 ##   1. Program Purpose
    
-###   The purpose of our program will be to allow the user to create a character (coming from a struct). They will then traverse the text based world with their character fighting monsters (anti-keto treats and goodies) and building up their own stats or losing them. It will be somewhat DnD-esque but with a twist that cooresponds to a Keto diet. Due to the beginner nature of my code, I will go with a version that is strict keto (hard mode) instead of being a difficulty select (though such a feature would be pretty cool). Ultimately, it is built on a system of discipline and happiness and if either one of these bars gets to 0, the game is over. As the character progresses through the world, a high score counter will display how many events the user survived.
+###   The purpose of our program will be to allow the user to create a character (coming from a struct). They will then traverse the text based world with their character fighting enemies or encountering allies (anti-keto treats and positive foods) and building up their own stats or losing them. It will be somewhat DnD-esque but with a twist that cooresponds to a Keto diet. Due to the beginner nature of my code, I will go with a version that is strict keto (hard mode) instead of being a difficulty select (though such a feature would be pretty cool). Ultimately, it is built on a system of discipline and happiness and if either one of these bars gets to 0, the game is over. As the character progresses through the world, a high score counter will display how many events the user survived.
 
 ##   2. Input/Outputs 
 ###      The inputs that our user will need to enter will be everything inside of the character creation struct. It will be the player name and the character name.
 
-###      Another input will be for certain events where the character will have to decide whether to consume a Keto or un-Keto food. Yes inputs on Keto foods will raise discipline but lower happiness while no will have the opposite effect. 
-   
-###      Yes inputs on un-Keto foods will raise happiness but lower discipline and no inputs will have the opposite effect.
+### The character struct will look like
+###    typedef struct {
+###        char user[32];
+###        char charname[32];
+###        int discipline; // = 50
+###        int happiness; // = 50
+###    } struct Character // Struct uses 72 Bytes approx.
 
-###      Output wise, each event will have a quick summary of what happened and what stats changed for the user.
+###      Another input will be for certain events where the character will have to decide whether to consume a Keto or un-Keto food. Yes inputs on Keto foods will raise discipline but lower happiness while no will have the opposite effect. On the flip side of the matter, yes inputs on un-Keto foods will raise happiness but lower discipline and no inputs will have the opposite effect.
+
+###      Output wise, each turn (or round) will have a quick summary of what happened and what stats changed for the user.
 
 ###      The variables I will be using will be:
 
-###      int event_counter // used to log how many events the user has gone through and then will corelate to a high score later on
+###      int event_counter // used to log how many events the user has gone through and then will corelate to a high score later on. WILL USE 4 BYTES
 
-###      int choice; // 1 for yes, 2 for no
+###      int choice; // 1 for yes, 2 for no. WILL USE 4 BYTES
 
 ##   3. In terms of having the functions of the program:
-###      a. A function for randomizing enemies.
+###      a. A function for randomizing the foods that the player will encounter.
 ###      b. A function for the user each turn to see what changed with their character that round.
 ###      c. A function that updates the high score.
+###      40 BYTES SEEMS FAIR
 
 ##   4. Data structures that we will use:
-###      a. Our character's struct.
-###      b. enumeration for bad foods.
-###      c. enumeration for good foods.
+###      a. Our character's struct. (Memory for this was already listed above)
+###      b. enumeration for foods. (I will just list all of the good and bad foods onto a single data structure and than find a way to build it so that each of the items in here are given points for discipline and happiness) It will look like:
+###     typedef enum {
+###     FOOD_KETO_AVOCADO,
+###     FOOD_KETO_BACON,
+###     FOOD_KETO_CHEESE,
+###     FOOD_KETO_EGGS,
+###     FOOD_KETO_SALMON,
+###     FOOD_KETO_SPINACH,
+###     FOOD_KETO_ALMONDS,
+###     FOOD_KETO_CHICKEN,
+###     FOOD_KETO_BROCCOLI,
+###     FOOD_KETO_OLIVES,
+### 
+###     FOOD_RUIN_PIZZA,
+###     FOOD_RUIN_CAKE,
+###     FOOD_RUIN_BREAD,
+###     FOOD_RUIN_PASTA,
+###     FOOD_RUIN_DONUT,
+###     FOOD_RUIN_FRIES,
+###     FOOD_RUIN_SODA,
+###     FOOD_RUIN_CANDY,
+###     FOOD_RUIN_CHOCOLATE_BAR,
+###     FOOD_RUIN_MUFFIN,
+### 
+###     FOOD_COUNT
+### } FoodType;
+###     This will land us at about 680 Bytes (giving us some breathing room)
+###      c. Likely another method of calling the values that each enum data type has.
 
 ##   5. The files we are using:
 ###      a. KetoMain.c: KetoMain.c is our main operating file that the other two files are going to based off of in compilation. It is also the file where all of our other files will come back to and base all of their code off of. Ultiamtely, KetoMain.c will be our file that keeps the story moving as opposed to our Ketohelpers files which hold parts of our code for keeping main going.
 ###      b. Ketohelpers.h: This is our file for storing our prototypes for the data types and functions from Ketohelpers.h.
 ###      c. Ketohelpers.c: This is our file for our functions and data types written out so that they can function with our KetoMain.c file.
+
+## MEMORY USAGE WILL LAND US AT 0.8 KB. 1 KB would likley give us some breathing room if we go over.
 
 ##   6. 
    
