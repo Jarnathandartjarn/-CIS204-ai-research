@@ -1,0 +1,49 @@
+This is the answers and reflection sheet for our final
+
+Step 10:
+    The reason why giving the Ai model a clear context before asking for help is because it will likely default to autopilot and assuming it needs to do everything for you. In actuality, for an assignment such as what we are working on, this defeats the purpose of understanding the code and even with understanding the code, without verifying it, you could either get total Ai hallucinations into the code or the code, even though it works, does not follow the vision of the user. In the case of this assignment, posting the prompt that we were required to tells it exactly what needs to happen before it starts working and only operates how and when the user tells it to. For example, with my own code, I want to build it step by step instead of plopping one giant amalgamation of code into three files: by doing this, I can, I guess, hold its hand and make sure it is following MY vision the way I want it to.
+
+Step 11:
+    1. The reason that developing a project specification BEFORE having Ai create a program is because it helps organize and actually get the program going in the direction that the user envisions it. Cleanly specifying it tells Ai EXACTLY how you want it to write your code. Basically, user writes an idea and the Ai takes that idea and puts it into code.
+
+    2. I do find Copilot to be quite amazing at grasping how to write C based off simple ideas I have. When it read my README.md (with a few corrections from things I didn't quite specify in my README.md, that is on me, not the Ai) , it grasped it exactly as it should be and took it... quite literally.
+
+Step 11-2 (Probably 12 but in the PDF it was still 11):
+    1. The reason why it would make sense to start with declaring helpers is because by knowing what our helpers are, we can know how our other C file will translate over into our main file.
+
+    2. I cannot say that there is anything out of the ordinary for how Copilot operated in this capacity considering that my own usage of ChatGPT often has allowed for the same thing. However it did take my readme file and was able to create those prototypes in my .h file which will later translate to the functions and how they translate over into my main.
+
+Step 12: 
+    A good, healthy approach for the Ai to leaving comments on our code is that it actually allows us to understand what is happening. Even with a regular, human developer, we still need to know what is SUPPOSED to happen. If the code needs fixes, we can get an idea of what needs to change. If there are no comments, it is much harder to decipher what needs to be happening.
+
+    In the case of the Ai here, while the Ai is likely to write correct code, it isn't always a guaranteed and having those comments can help us to go back and make the fixes we need.
+
+Step 13:
+    1. The benefit to using Ai to write your code is time, convenience and easy change. However, that convenience does come at a cost of accuracy concerns to the developer's vision. I have had the issue before of using Copilot's autodetect to help me write code before (in my own fun side-adventures) and it did not actually fully gather what I wanted.
+
+    2. With the particular piece that it autodetected and added for us in this case, it was correct. Because we do want the character to be given 50 discipline (and also 50 happiness) by default, what it has decided to give in the code was exactly what we needed.
+
+Step 14:
+
+    1. I absolutely believe it is. This one here actually gave me some optimism about using Ai to help me write the code (I did not write any for this assignment, but for when I do on my own time or career related).
+
+    2. It gives a solid direction for where we are intending to go.
+
+Step 15:
+
+    1. Productivity wise, I feel like more can be done in less time. I would give it a 7 or 8 out of 10. I do still believe that there are some errors that could appear because of Ai that might not in a human written code. These of course can be easily corrected though.
+
+    2. Using an Ai copilot can help me understand my code better, especially when I also ask it questions about why it chose the coding as it did.
+
+    3. For the sake of productivity and I suppose, easement of frustration, I would leave them on, though, I would still prefer to be the one writing the code with Ai helping me along the way.
+
+Step 16:
+
+    1. My code got stuck in an infinite loop for the 1 for yes and 2 for no. (Was able to easily correct with a simple prompt to the Ai)
+
+Step 17:
+
+    1. My program DID produce the correct output (with a secondary prompt to correct adding stats for each round and capping D and H at 50.
+
+    3. With the exception of the infinite loop and needing to add the chunk to have it show each round's stats as well as to cap D and H at 50, I only had to re-prompt once or twice.
+
